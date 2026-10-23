@@ -1,0 +1,18 @@
+{
+  "slug": "vision_app",
+  "entry": "app.py",
+  "title": "Interpretación de imágenes",
+  "category": "Imagen",
+  "headline": "Una imagen.",
+  "accent": "Más de una lectura.",
+  "description": "Describe imágenes en español y responde preguntas sobre su contenido.",
+  "input": "Imagen JPG, JPEG o PNG; pregunta opcional.",
+  "output": "Interpretación en español, generada progresivamente.",
+  "steps": "Introduce tu clave de OpenAI, carga la imagen y pulsa Analizar imagen. Activa la pregunta específica si la necesitas.",
+  "technology": "GPT-4o · OpenAI",
+  "limits": "Necesita una clave de OpenAI. La interpretación puede contener errores; no equivale a una medición.",
+  "image": "OIG4.jpg",
+  "url": "https://visionapp-bacpk6abduty44a9am9lc2.streamlit.app/",
+  "repo": "https://github.com/Jhuza/vision_app",
+  "kind": "vision"
+}

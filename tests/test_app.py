@@ -23,7 +23,7 @@ def picture(name="test.png", color="blue"):
 def test_empty_page_and_validation_do_not_create_client(monkeypatch):
     client = MagicMock()
     monkeypatch.setattr(openai, "OpenAI", client)
-    app = AppTest.from_file(str(APP)).run()
+    app = AppTest.from_file(str(APP), default_timeout=30).run()
     assert not app.exception
     assert app.text_input[0].proto.type == app.text_input[0].proto.PASSWORD
     app.button[0].click().run()

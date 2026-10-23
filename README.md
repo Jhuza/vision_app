@@ -25,3 +25,10 @@ python -m pytest tests -q
 Pruebas sin llamadas de pago: arranque sin clave, validación, carga de imagen, pregunta opcional, MIME, respuesta progresiva, conservación/invalidez del resultado y error del servicio. OpenAI se simula; la calidad y disponibilidad del modelo requieren una prueba con una clave válida.
 
 Consulta `AURORA.md` para mantener el diseño. El archivo de entrada en Streamlit Cloud sigue siendo `app.py`.
+
+
+## Interfaz Aurora
+
+[Guía visual](docs/guia-visual-aurora.md) · [Ficha de la experiencia](docs/EXPERIENCIA.md) · [Aplicación](https://visionapp-bacpk6abduty44a9am9lc2.streamlit.app/)
+
+La personalización conserva el propósito del ejercicio de clase. Los componentes compartidos se documentan en [AURORA.md](AURORA.md).
