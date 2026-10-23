@@ -2,7 +2,9 @@ import base64
 import hashlib
 import streamlit as st
 from openai import OpenAI
-from aurora import empty_state, footer, hero, section, setup
+from aurora import empty_state, footer, hero, section, setup, project_context
+import json
+from pathlib import Path
 
 
 def encode_image(image_file):
@@ -12,6 +14,7 @@ def encode_image(image_file):
 setup("Visión", "02 / IMÁGENES")
 hero("VISIÓN · INTERPRETACIÓN DE IMÁGENES", "Una imagen.", "Más de una lectura.",
      "Explora lo que hay en una imagen. Obtén una descripción en español o añade una pregunta para orientar el análisis.", kind="vision")
+project_context(json.loads(Path(__file__).with_name("app_info.json").read_text(encoding="utf-8")))
 
 left, right = st.columns([1, 1.15], gap="large")
 with left:
